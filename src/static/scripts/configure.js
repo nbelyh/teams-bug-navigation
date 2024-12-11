@@ -2,12 +2,12 @@
   "use strict";
 
   const onSaveHandler = async (saveEvent) => {
-    const host = 'https://live-dingo-upright.ngrok-free.app';
+    const origin = location.origin;
     const navigate = document.getElementById('navigate');
     const entityId = `navigate${navigate.value}`;
     const settings = {
-      contentUrl: `${host}/tab`,
-      websiteUrl: `${host}/tab`,
+      contentUrl: `${origin}/tab`,
+      websiteUrl: `${origin}/tab`,
       entityId,
       suggestedDisplayName: entityId,
     }

@@ -1,7 +1,8 @@
 (() => {
   "use strict";
 
-  const appId = "d7e76c4f-6402-4454-a671-cb443181aad7";
+  const params = new URLSearchParams(window.location.search);
+  const appId = params.get("appId") || "3d7984b9-9f72-4035-be46-69a152b8f6c2";
 
   // Call the initialize API first
   microsoftTeams.app.initialize().then(() => {

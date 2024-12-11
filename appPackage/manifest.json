@@ -26,7 +26,7 @@
   "composeExtensions": [],
   "configurableTabs": [
     {
-      "configurationUrl": "${{TAB_ENDPOINT}}/configure",
+      "configurationUrl": "${{TAB_ENDPOINT}}/configure?appId=${{TEAMS_APP_ID}}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -37,8 +37,8 @@
     {
       "entityId": "index",
       "name": "Home",
-      "contentUrl": "${{TAB_ENDPOINT}}/personal",
-      "websiteUrl": "${{TAB_ENDPOINT}}/personal",
+      "contentUrl": "${{TAB_ENDPOINT}}/personal?appId=${{TEAMS_APP_ID}}",
+      "websiteUrl": "${{TAB_ENDPOINT}}/personal?appId=${{TEAMS_APP_ID}}",
       "scopes": [
         "personal"
       ]
